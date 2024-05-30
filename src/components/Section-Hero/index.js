@@ -12,7 +12,7 @@ export default function SectionHero() {
                     <div className={ContentStyle}>
                         <h1 className={TitleHero}>Front-end descomplicado e direto ao ponto!</h1>
                         <p className={TextHero}>Aprenda a desenvolver interfaces modernas e de alta qualidade com quem está na área atuando com projetos altamente renomados.</p>
-                        <BtnMain variant="lg" label="Fazer parte da lista de espera" title="Entre em contato" url="#" />
+                        <BtnMain variant="lg" label="Fazer parte da lista de espera" title="Entre em contato" url="/contato" />
                     </div>
                 </Container>
                 <Image 
