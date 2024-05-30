@@ -94,5 +94,7 @@ globalStyle(':root', {
     '--gray-700': '#5C5F69',
     '--gray-800': '#393B42',
     '--gray-900': '#0A0B0D',
+    '--black': '#000',
     '--white': '#fff',
+    '--header-height': '8.8rem'
 })
