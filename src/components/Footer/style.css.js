@@ -5,7 +5,7 @@ export const StyleFooter = style({
     ".container": {
         ".main-area": {
             display: "flex",
-            alignItems: "center",
+            alignItems: "flex-start",
             justifyContent: "space-between",
             borderBottom: "1px solid rgba(255,255,255,.24)",
             marginBottom: "2.4rem",
@@ -20,6 +20,7 @@ export const StyleFooter = style({
                 }
             },
             ".right": {
+                maxWidth: "79.2rem",
                 display: "flex",
                 flexGrow: "1",
                 justifyContent: "space-between",
