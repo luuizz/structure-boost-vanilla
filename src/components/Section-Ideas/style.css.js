@@ -3,7 +3,14 @@ import Container from "../Container/container";
 
 export const StyleSectionIdeas = style({
     paddingTop: '12.8rem',
-
+    '@media': {
+        '(max-width: 1200px)': {
+            paddingTop: "6.8rem",
+        },
+        '(max-width: 560px)': {
+            paddingTop: "8rem",
+        }
+    }
 })
 
 export const IdeaContainer = style({
@@ -21,6 +28,25 @@ export const IdeaContainer = style({
        borderBottom: '1px solid var(--gray-800)',
        gap: '3.2rem',
        paddingBottom: '12.8rem'
+    },
+    "@media": {
+        '(max-width: 991px)': {
+            "ul": {
+                flexDirection: "column",
+                alignItems: "center",
+                width: "100%",
+                gap: "3.2rem"
+            },
+        },
+        '(max-width: 560px)': {
+            "h3": {
+                fontSize: "2.8rem"
+            },
+            "ul": {
+                paddingBottom: "8rem",
+                gap: "6.4rem"
+            }
+        }
     }
 })
 
@@ -45,4 +71,24 @@ export const itemCardDigital = style({
             color: 'var(--gray-600)'
         }
     },
+    '@media': {
+        '(max-width: 1200px)': {
+            ".info": {
+                "p": {
+                    fontSize: "1.6rem",
+                }
+            }
+        },
+        '(max-width: 991px)': {
+            display: "flex",
+            alignItems: "center",
+            flexDirection: "column",
+            textAlign: "center",
+            ".info": {
+                "p": {
+                    fontSize: "1.8rem"
+                }
+            }
+        },
+    }
 })
