@@ -20,7 +20,7 @@ globalStyle(
         margin: 0,
         padding: 0,
         boxSizing: 'border-box',
-        fontSmooth: 'antialiased'
+        WebkitFontSmoothing: 'antialiased'
 })
     
 globalStyle('html, body', {
@@ -30,7 +30,15 @@ globalStyle('html, body', {
 
 globalStyle('body', {
     backgroundColor: 'var(--gray-900)',
-    color: 'var(--white)'
+    color: 'var(--white)',
+    "&::-webkit-scrollbar": {
+        width: "0.5rem",
+        height: "0.5rem",
+        backgroundColor: "var(--gray-800)",
+    },
+    "&::-webkit-scrollbar-thumb": {
+        backgroundColor: "var(--pink-10)",
+    }
 })
 
 globalStyle('img', {
