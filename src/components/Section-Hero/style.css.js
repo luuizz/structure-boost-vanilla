@@ -33,10 +33,10 @@ export const StyleSectionHero = style({
             },
         },
         '(max-width: 768px)': {
-            paddingTop: "6rem"
+            paddingTop: "calc(14.8rem)"
         },
         '(max-width: 560px)': {
-            paddingTop: "8.8rem",
+            paddingTop: "calc(17.6rem)",
         }
     }
 })

@@ -23,6 +23,9 @@ export const HeaderStyle = style({
             ".container": {
                 ".hamburger-react": {
                     display: "block",
+                    "div": {
+                        height: "2px !important",
+                    }
                 }
             }
         }
