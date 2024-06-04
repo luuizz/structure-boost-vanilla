@@ -1,11 +1,15 @@
 import Link from "next/link";
 import { variantBtn } from "./style.css";
 
-export default function BtnMain({label, url, title, variant}) {
+export default function BtnMain({children, url, variant, title}) {
 
-    const buttonClassName = variant === "white" ? variantBtn.white : (variant === "lg" ? variantBtn.lg : variantBtn.default);
-
+    const buttonClassName = {
+        white: variantBtn.white,
+        lg: variantBtn.lg,
+        default: variantBtn.default
+    }[variant] || variantBtn.default;
+    
     return (
-        <Link className={buttonClassName} href={url} title={title}>{label}</Link>
+        <Link className={buttonClassName} title={title} href={url}>{children}</Link>
     )
 }
