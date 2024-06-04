@@ -9,10 +9,9 @@ export default function SectionNewsLetter() {
               <p>Aprenda a desenvolver interfaces modernas e de alta qualidade com quem está na área atuando com projetos altamente renomados.</p>
               <BtnMain 
               url="/contato" 
-              label="Fazer parte da lista de espera"
               title="Preencher formulário"
               variant="white"
-              />
+              >Fazer parte da lista de espera</BtnMain>
           </div>
       </section>
     )

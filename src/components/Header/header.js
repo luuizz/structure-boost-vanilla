@@ -42,7 +42,7 @@ export default function Header() {
                 </Link>
                     <nav className={NavHeader}>
                         <Navigation />
-                        <BtnMain variant="default" label="Entre em contato" url="/contato" title="Entre em contato" />
+                        <BtnMain variant="default" url="/contato" title="Entre em contato">Entre em contato</BtnMain>
                     </nav>
                     <Hamburger label="Mostrar menu" toggled={isOpen} toggle={setOpen} />    
             </Container>
@@ -51,7 +51,7 @@ export default function Header() {
                 <div className="container">
                     <nav>
                         <Navigation closeMenu={closeMenu} />
-                        <BtnMain variant="default" label="Entre em contato" url="#" title="Entre em contato" />
+                        <BtnMain variant="default" url="/contato" title="Entre em contato">Entre em contato</BtnMain>
                     </nav>
                 </div>
         </aside>
