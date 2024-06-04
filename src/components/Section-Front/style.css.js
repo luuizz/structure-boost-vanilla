@@ -1,4 +1,5 @@
 import { style } from "@vanilla-extract/css";
+import { vars } from "@/app/variables.css";
 
 export const CardPostStyle = style({
     border: "2px solid rgba(255,255,255,.08)",
@@ -24,7 +25,7 @@ export const CardPostStyle = style({
         "p": {
             fontSize: "1.6rem",
             letterSpacing: "-0.048rem",
-            color: "var(--gray-600)",
+            color: vars.gray[600],
         }
     },
     '@media': {
@@ -58,7 +59,7 @@ export const TitleTextFront = style({
     justifyContent: "space-between",
     marginBottom: "6.4rem",
     "p": {
-        color: "var(--gray-600)",
+        color: vars.gray[600],
         letterSpacing: "-0.054rem"
     },
     ".left": {
@@ -118,7 +119,7 @@ export const tagStyle = style({
     display: "inline-block",
     borderRadius: "10rem",
     background: "rgba(255,255,255,.1)",
-    color: "var(--gray-100)",
+    color: vars.gray[100],
     textAlign: "center",
     fontSize: "1.4rem",
     padding: "0.8rem 2.2rem",

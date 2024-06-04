@@ -1,8 +1,9 @@
 import { style } from "@vanilla-extract/css";
+import { vars } from "@/app/variables.css";
 
 export const StyleSectionNewsletter = style({
     padding: "8.9rem 0",
-    background: "var(--pink-10)",
+    background: vars.pink[10],
     ".container": {
         textAlign: "center",
         "h2": {

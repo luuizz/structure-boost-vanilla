@@ -1,5 +1,6 @@
 import { style } from "@vanilla-extract/css";
 import Container from "../Container/container";
+import { vars } from "@/app/variables.css";
 
 export const StyleSectionIdeas = style({
     paddingTop: '12.8rem',
@@ -25,7 +26,7 @@ export const IdeaContainer = style({
     },
     "ul": {
        display: 'flex',
-       borderBottom: '1px solid var(--gray-800)',
+       borderBottom: `1px solid ${vars.gray[800]}`,
        gap: '3.2rem',
        paddingBottom: '12.8rem'
     },
@@ -68,7 +69,7 @@ export const itemCardDigital = style({
 
         },
         "p": {
-            color: 'var(--gray-600)'
+            color: vars.gray[600]
         }
     },
     '@media': {

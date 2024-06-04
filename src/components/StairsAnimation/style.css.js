@@ -1,4 +1,5 @@
 import { style } from "@vanilla-extract/css";
+import { vars } from "@/app/variables.css";
 
 export const StyledAnimationStairs = style({
     ".transition-container": {
@@ -14,14 +15,14 @@ export const StyledAnimationStairs = style({
             position: "relative",
             height: "100%",
             width: "100%",
-            backgroundColor: "var(--pink-10)",
+            backgroundColor: vars.pink[10],
         }
     },
     ".transition-background": {
         position: "fixed",
         width: "100%",
         height: "100vh",
-        backgroundColor: "var(--pink-10)",
+        backgroundColor: vars.pink[10],
         zIndex: 2026,
         pointerEvents: "none",
         top: 0,

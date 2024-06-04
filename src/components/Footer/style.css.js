@@ -1,4 +1,5 @@
 import { style } from "@vanilla-extract/css";
+import { vars } from "@/app/variables.css";
 
 export const StyleFooter = style({
     padding: "4.8rem 0",
@@ -14,7 +15,7 @@ export const StyleFooter = style({
                 maxWidth: "27.9rem",
                 "p": {
                     marginTop: "2.4rem",
-                    color: "var(--gray-600)",
+                    color: vars.gray[600],
                     fontSize: "1.6rem",
                     letterSpacing: "-0.048rem"
                 }
@@ -27,7 +28,7 @@ export const StyleFooter = style({
             }
         },
         ".copy": {
-            color: "var(--gray-600)",
+            color: vars.gray[600],
             fontSize: "1.6rem",
             letterSpacing: "-0.048rem",
         }
@@ -82,7 +83,7 @@ export const StyleFooter = style({
 export const ItemNavFooter = style({
     "h6": {
         fontSize: "1.6rem",
-        color: "var(--gray-100)",
+        color: vars.gray[100],
         fontFamily: "var(--font-inter)",
         fontWeight: 600,
         letterSpacing: "-0.048rem",
@@ -98,13 +99,13 @@ export const ItemNavFooter = style({
             },
             "a": {
                 fontFamily: "var(--font-inter)",
-                color: "var(--gray-600)",
+                color: vars.gray[600],
                 transition: "color .3s ease",
                 display: "flex",
                 gap: "1.8rem",
                 alignItems: "center",
                 "&:hover": {
-                    color: "var(--white)",
+                    color: vars.white,
                 }
             }
         }

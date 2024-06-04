@@ -1,6 +1,7 @@
 import { keyframes, style } from "@vanilla-extract/css";
 import stroke from "@/assets/stroke.svg"
 import illustraMobile from "@/assets/illustra-mobile.svg"
+import { vars } from "@/app/variables.css";
 
 const drawLine = keyframes({
     '0%': {
@@ -18,7 +19,7 @@ export const StyleSectionHero = style({
     overflowX: "hidden",
     "::after": {
         content: "",
-        backgroundColor: "var(--pink-10)",
+        backgroundColor: vars.pink[10],
         width: "100%",
         height: "22rem",
         position: "absolute",

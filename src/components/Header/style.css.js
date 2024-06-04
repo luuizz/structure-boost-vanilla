@@ -1,4 +1,5 @@
 import { style } from "@vanilla-extract/css";
+import { vars } from "@/app/variables.css";
 
 export const HeaderStyle = style({
     width: "100%",
@@ -8,7 +9,7 @@ export const HeaderStyle = style({
     transition: "all 0.3s ease 0s",
     position: "fixed",
     zIndex: 2023,
-    backgroundColor: "var(--gray-900)",
+    backgroundColor: vars.gray[900],
     "&.fixed": {
         padding: "1.4rem 0px",
         borderBottom: "1px solid rgba(255, 255, 255, 0.24)",
@@ -57,7 +58,7 @@ export const LinksHeader  = style({
 })
 
 export const LinkStyle = style({
-    color: "var(--gray-100)",
+    color: vars.gray[100],
     fontSize: "1.6rem",
     fontWeight: 400,
     transition: "opacity .3s ease",
@@ -70,11 +71,11 @@ export const LinkStyle = style({
 export const asideMenuStyle = style({
     padding: "6.4rem 0px",
     width: "100%",
-    height: "calc(100vh - var(--header-height))",
-    backgroundColor: 'var(--black)',
+    height: `calc(100vh - ${vars.headerHeight})`,
+    backgroundColor: vars.black,
     opacity: 0,
     pointerEvents: "none",
-    top: "var(--header-height)",
+    top: vars.headerHeight,
     transition: "all 0.3s ease 0s",
     transform: "translateY(100%)",
     zIndex: 50,
